@@ -1,0 +1,70 @@
+body{
+    background-color: rgb(209, 247, 245);
+}
+#home{
+    padding-top: 5rem;
+    
+}
+.home h1, p {
+    padding-right: 800px;
+    padding-top: 50px;
+}
+button{
+    float: left;
+}
+#about{
+    /* background-color: rgb(160, 134, 95); */
+    height: 100vh;
+    padding-top: 1rem;
+}
+.abt-all{
+    display: flex;
+    background-color: #eef6f6;
+    padding-top: 5px;
+
+}
+
+.abt-img{
+    width: 500px;
+}
+.abt-txt{
+    color: #0c5d5d ;
+    padding-left: 150px;
+}
+.abt-txt ul{
+    background-color: rgb(191, 232, 211);
+
+}
+#depart{
+    /* background-color: rgb(70, 67, 62); */
+    height: 90vh;
+    padding-top: 1rem;
+}
+.listing-dep ul{
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: #e3f0f0;
+    list-style: none;
+    columns: 2;
+    -webkit-columns: 3;
+    -moz-columns: 3;
+  }
+  .listing-dep li {
+    margin-bottom: 10px; /* Adjust the spacing between list items if needed */
+  }  
+#docs{
+    background-color: rgb(243, 150, 10);
+    height: 90vh;
+    padding-top: 3rem;
+}
+#testi{
+    background-color: rgb(107, 95, 160);
+    height: 90vh;
+    padding-top: 3rem;
+}
+#faq{
+    background-color: rgb(149, 95, 160);
+    height: 90vh;
+    padding-top: 3rem;
+}
