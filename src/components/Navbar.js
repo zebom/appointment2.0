@@ -1,6 +1,9 @@
 import logo from './images/logo.png'
 import './Navbar.css'
-import {Link,animateScroll as scroll} from 'react-scroll'
+import {Link as ScrollLink ,animateScroll as scroll} from 'react-scroll'
+import { Link } from 'react-router-dom'
+
+
 
 function Navbar(){
 
@@ -9,15 +12,25 @@ function Navbar(){
     // };
     return(
         <div className="header">
+            {/* <div className='header-2'> 
+            <Link>Register</Link>
+            <Link>Login</Link>
+            <hr></hr>
+            </div> */}
+            <div>
+                <Link to="/Login">Login</Link>
+                <Link to="/Register">Register</Link>
+            </div>
+            
         <header>
             <nav className="navbar">
                 <h3><img src={logo} alt='logo'  style={{
                             width: '70px', // Adjust the width as needed
                              height: 'auto', // Maintain the aspect ratio
-                            }}  /></h3>
+                            }}  /></h3><ul></ul>
                 <ul className="nav-menu">
                     <li className="nav-item">
-                        <Link
+                        <ScrollLink
                          activeClass='active'
                           to='home'
                           spy={true}
@@ -25,10 +38,10 @@ function Navbar(){
                           offset={-70}
                           duration={500} >
                             Home
-                        </Link>
+                        </ScrollLink>
                     </li>
                     <li className="nav-item">
-                        <Link 
+                        <ScrollLink
                         activeClass='active'
                         to='about'
                         spy={true}
@@ -36,10 +49,10 @@ function Navbar(){
                         offset={-70}
                         duration={500}>
                             About Us
-                        </Link>
+                        </ScrollLink>
                     </li>
                     <li className="nav-item">
-                    <Link 
+                    <ScrollLink
                         activeClass='active'
                         to='depart'
                         spy={true}
@@ -47,10 +60,10 @@ function Navbar(){
                         offset={-70}
                         duration={500}>
                             Departments
-                    </Link>
+                    </ScrollLink>
                     </li>
                     <li className="nav-item">
-                    <Link 
+                    <ScrollLink
                         activeClass='active'
                         to='docs'
                         spy={true}
@@ -58,10 +71,10 @@ function Navbar(){
                         offset={-70}
                         duration={500}>
                             Doctors
-                    </Link>
+                    </ScrollLink>
                     </li>
                     <li className="nav-item">
-                    <Link 
+                    <ScrollLink
                         activeClass='active'
                         to='testi'
                         spy={true}
@@ -69,10 +82,10 @@ function Navbar(){
                         offset={-70}
                         duration={500}>
                             Testimonilas
-                    </Link>
+                    </ScrollLink>
                     </li>
                     <li className="nav-item">
-                    <Link 
+                    <ScrollLink
                         activeClass='active'
                         to='faq'
                         spy={true}
@@ -80,7 +93,7 @@ function Navbar(){
                         offset={-70}
                         duration={500}>
                             FAQ
-                    </Link>
+                    </ScrollLink>
                     </li>
                     {/* <li className="nav-item">
               <a href="#" onClick={scrollToTop}>

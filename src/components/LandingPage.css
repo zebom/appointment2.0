@@ -37,8 +37,11 @@ button{
 }
 #depart{
     /* background-color: rgb(70, 67, 62); */
-    height: 90vh;
+    height: 100vh;
     padding-top: 1rem;
+}
+.list{
+    background-color:  rgb(2, 47, 45);
 }
 .listing-dep ul{
     padding-top: 20px;
@@ -51,20 +54,122 @@ button{
     -moz-columns: 3;
   }
   .listing-dep li {
-    margin-bottom: 10px; /* Adjust the spacing between list items if needed */
+    margin-bottom: 8px; /* Adjust the spacing between list items if needed */
   }  
+ .caption{
+    color: black !important;
+    /* width: 100%; */
+ }
+ /* .c-item{
+    width: 500px;
+ } */
+ /* .crs-img{
+    height: 300px;
+    width: 1000px;
+    background-size:  100px 500px,cover;
+    object-fit: cover;
+} */
 #docs{
     background-color: rgb(243, 150, 10);
     height: 90vh;
     padding-top: 3rem;
 }
 #testi{
-    background-color: rgb(107, 95, 160);
+    background-color: rgb(209, 247, 245);
+    height: 90vh;
+    padding-top: 3rem;
+    padding: 40px 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.testi{
+    font-size: 25px;
+    font-weight: 300px;
+    font-family: bold ; 
+}
+.testi-container{
+    background-color: #599292;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    /* padding: 50px; */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1) ;
+   
+    
+
+}
+.testi-container p{
+    font-size: 20px;
+    line-height: 1.2;
+   
+  
+}
+.testimonial-container p:last-child {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+.testi-container button{
+    background-color: #0c5d5d;
+    margin-top: 25px;
+    color: white;
+    padding: 10px 20px;
+   border-radius: 15px;
+   cursor: pointer;
+   margin-left: 25px;
+  
+}
+.testi-container button:hover{
+    background-color: rgb(4, 33, 38);
+}
+#faq{
+    background-color: rgb(209, 247, 245);
     height: 90vh;
     padding-top: 3rem;
 }
-#faq{
-    background-color: rgb(149, 95, 160);
-    height: 90vh;
-    padding-top: 3rem;
+.fq{
+    font-size: 25px;
+    font-weight: 300px;
+    font-family: bold ;
+}
+.wrapper{
+   display: flex;
+   height: 70vh;
+   width: 70vw;
+   justify-content: center;
+   align-items: center; 
+   margin-left: 200px;
+  
+}
+.accordion{
+    width: 850px;
+}
+.item{
+    background-color: rgba(17, 19, 19, 0.209);
+    margin-bottom: 5px;
+    padding: 15px 20px;
+}
+.title{
+    color: #094b4b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+}
+/* .title h2{
+   padding-right: 600px;
+} */
+.content{
+    color: rgb(76, 99, 99);
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0,1,0,1);
+}
+.content.show {
+    height: auto;
+    max-height: 9999px;
+    transition: all 0.5s cubic-bezier(1,0,1,0 );
 }
