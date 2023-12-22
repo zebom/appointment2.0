@@ -11,9 +11,18 @@
     padding-left: 1000px;
     display: flex;
   }
-  .header-2 hr{
+  .header-2 a{
     color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: bold;
+    padding-left: 10px;
   }
+  .header-2 a:hover{
+    text-decoration: underline 1px;
+    color: rgb(194, 241, 233);
+  }
+ 
   .header .navbar{
     display: flex;
     justify-content: space-between;

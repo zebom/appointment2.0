@@ -8,8 +8,8 @@ import cardi from './images/cardi.jpeg'
 import obgyn from './images/obgyn.jpg'
 import orthepedics from './images/orthopedics.jpg'
 import icu from './images/icu.jpg'
-import { Link } from 'react-router-dom'
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -33,6 +33,14 @@ function LandingPage(){
     setCurrentIndex((prevIndex) => (prevIndex -1 + testimonialData.length) % testimonialData.length);
   }
 
+  const navigate = useNavigate();
+
+  // Example of programmatically navigating on button click
+  const handleLoginClick = () => {
+    navigate('/Login');
+  }
+
+
     return(
         <div className=''>
        
@@ -51,7 +59,8 @@ function LandingPage(){
 
 </section>
 <section id='about'>
-    <h3> About LIV Hospital</h3><hr></hr>
+  <div className='about'>
+    <h3> About LIV Hospital</h3></div><hr></hr>
     <div className='abt-all'>
         <div className='abt-img'  style={{
     backgroundImage: `url(${download})`,
@@ -78,7 +87,9 @@ function LandingPage(){
 
 </section>
 <section id='depart'>
-<h3>Departments</h3><hr></hr>
+  <div className='dep'>
+<h3>Departments</h3>
+</div><hr></hr>
 <div className='list'>
     <div className=' listing-dep'>
     <ul>
@@ -148,11 +159,8 @@ function LandingPage(){
 </div>
 </section>
 <section id='docs'>
-doctors
-<div>
-                <Link to="/Login">Login</Link>
-                <Link to="/Register">Register</Link>
-            </div>
+<div className='doc'><h3>Doctors</h3></div><hr></hr>
+
 </section>
 <section id='testi'>
 <div className='testi'>Testimonials</div><hr></hr>
@@ -243,5 +251,5 @@ const testimonialData = [
       'I encountered difficulties navigating the website. The booking process was confusing, and the interface seemed outdated. I hope for improvements in user experience and website design.',
   },
  
-];
+]
 export default LandingPage;  

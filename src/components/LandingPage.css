@@ -17,6 +17,12 @@ button{
     height: 100vh;
     padding-top: 1rem;
 }
+.about{
+    font-size: 25px;
+    font-weight: 300px;
+    font-family: bold ; 
+    padding-left: 650px; 
+}
 .abt-all{
     display: flex;
     background-color: #eef6f6;
@@ -39,6 +45,12 @@ button{
     /* background-color: rgb(70, 67, 62); */
     height: 100vh;
     padding-top: 1rem;
+}
+.dep{
+    font-size: 25px;
+    font-weight: 300px;
+    font-family: bold ; 
+    padding-left: 650px;
 }
 .list{
     background-color:  rgb(2, 47, 45);
@@ -74,6 +86,12 @@ button{
     height: 90vh;
     padding-top: 3rem;
 }
+.doc{
+    font-size: 25px;
+    font-weight: 300px;
+    font-family: bold ; 
+    padding-left: 650px; 
+}
 #testi{
     background-color: rgb(209, 247, 245);
     height: 90vh;
@@ -87,6 +105,7 @@ button{
     font-size: 25px;
     font-weight: 300px;
     font-family: bold ; 
+    padding-left: 650px;
 }
 .testi-container{
     background-color: #599292;
@@ -110,6 +129,8 @@ button{
 .testimonial-container p:last-child {
     margin-top: 20px;
     font-weight: bold;
+    
+
   }
 .testi-container button{
     background-color: #0c5d5d;
@@ -133,7 +154,9 @@ button{
     font-size: 25px;
     font-weight: 300px;
     font-family: bold ;
+    padding-left: 650px;
 }
+
 .wrapper{
    display: flex;
    height: 70vh;

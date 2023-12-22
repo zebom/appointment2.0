@@ -1,0 +1,120 @@
+body{
+    background-color: rgb(209, 247, 245);
+}
+/* .login{
+    background-color: red;
+    padding-top: 15rem;
+} */
+/* .reg{
+    background-color: red;
+    padding-top: 3rem; 
+} */
+.log-head{
+    background-color: #0c5d5d;
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .log-head2{
+    padding-left: 1000px;
+    display: flex;
+  }
+  .log-head a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: bold;
+    padding-left: 10px;
+  }
+  .log-head a:hover{
+    text-decoration: underline 1px;
+    color: rgb(54, 65, 63);
+  }
+  .reg{
+    margin-top: 0px;
+    position: relative;
+  }
+  .reg h2{
+    margin-left: 350px;
+    font-family: italic;
+    color: #0f2b2b;
+    font-size: 3rem;
+    font-weight: bolder;
+    
+  }
+ .container{
+    position: absolute;
+    left: 250px;
+    width: 900px;
+    height: 525px;
+    top: 25%;
+    background-color: rgb(81, 124, 135);
+    /* transform: translate(-50%); */
+    opacity: 0.9;
+ }
+ .container h3{
+    margin-left: 350px;
+ }
+ .form{
+    margin-left: 50px;
+ }
+ .form input{
+    margin-left: 5px;
+ }
+ .form label{
+    margin-left: 15px;
+ }
+ .but{
+    cursor: pointer;
+    margin-left: 350px;
+ }
+ .but:hover{
+    background-color: #0c5d5d;
+    
+ }
+ .log{
+    margin-top: 0px;
+    position: relative;
+  }
+  .log h2{
+    margin-left: 350px;
+    font-family: italic;
+    color: #0f2b2b;
+    font-size: 4rem;
+    font-weight: bolder;
+  }
+ .container-l{
+    position: absolute;
+    left: 350px;
+    width: 600px;
+    height: 300px;
+    top: 70%;
+    background-color: rgb(81, 124, 135);
+    /* transform: translate(-50%); */
+    opacity: 0.9;
+ }
+ .container-l h3{
+    margin-left: 350px;
+ }
+ .form-l{
+    margin-left: 50px;
+ }
+ .form-l input{
+    margin-left: 5px;
+ }
+ .form-l label{
+    margin-left: 15px;
+ }
+ .log1{
+    cursor: pointer;
+    margin-left: 220px;
+ }
+ .log1:hover{
+    background-color: #0c5d5d;
+    
+ }
+
+ 

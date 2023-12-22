@@ -17,17 +17,20 @@ function Navbar(){
             <Link>Login</Link>
             <hr></hr>
             </div> */}
-            <div>
-                <Link to="/Login">Login</Link>
+            <div className='header-2'>
+               <nav className='navbar'>
+                <Link to="/Login">Login</Link> 
                 <Link to="/Register">Register</Link>
+                </nav>
             </div>
+            
             
         <header>
             <nav className="navbar">
                 <h3><img src={logo} alt='logo'  style={{
                             width: '70px', // Adjust the width as needed
                              height: 'auto', // Maintain the aspect ratio
-                            }}  /></h3><ul></ul>
+                            }}  /></h3>
                 <ul className="nav-menu">
                     <li className="nav-item">
                         <ScrollLink
