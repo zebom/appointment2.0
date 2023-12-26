@@ -21,6 +21,7 @@ function Navbar(){
                <nav className='navbar'>
                 <Link to="/Login">Login</Link> 
                 <Link to="/Register">Register</Link>
+              
                 </nav>
             </div>
             

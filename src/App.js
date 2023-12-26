@@ -41,6 +41,9 @@ import LandingPage from './components/LandingPage';
 import Login from './components/Login';
 import Register from './components/Register';
 import { Navigate } from 'react-router-dom';
+import Doctor from './components/Doctor'
+import Admin from './components/Admin';
+import Patient from './components/Patient';
 
 
 function App() {
@@ -50,7 +53,9 @@ function App() {
         {/* Public routes (without NavBar) */}
         <Route path="/Login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-
+        <Route path="/Doctor" element={<Doctor />} />
+        <Route path="/Patient" element={<Patient />} />
+        <Route path="/Admin" element={<Admin />} />
         {/* LandingPage at the root path */}
         <Route path="/" element={
           <>
